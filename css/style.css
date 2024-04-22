@@ -1226,18 +1226,18 @@ input {
         width: calc((100% - 24px)/2);
     }
 
-    .footer{
-
+    .footer-container{
+        align-items: baseline;
+        justify-content: flex-start;
+        width: 584px;
     }
 
     .footer-first-section {
-        margin-right: 24px;
-        min-width: 264px;
-        min-height: 112px;
+        
     }
 
     .footer-second-section {
-        margin-bottom: 34px;
+        
     }
 
     .footer-subscribe {
@@ -1403,12 +1403,12 @@ input {
     }
 
     .footer-first-section {
-        margin-right: 120px;
+        
         
     }
 
     .footer-second-section {
-        margin-right: 80px; 
+        
     }
 
     .footer-subscribe {
@@ -1436,8 +1436,7 @@ input {
         flex-direction: row;
         flex-wrap: wrap;
         row-gap: 72px;
-        width: 584px
-        
+        width: 584px;
     }
 
     .footer-logo{
