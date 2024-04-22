@@ -1227,9 +1227,9 @@ input {
     }
 
     .footer-container{
-        align-items: baseline;
-        justify-content: flex-start;
-        width: 584px;
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 108px;
     }
 
     .footer-first-section {
@@ -1259,15 +1259,6 @@ input {
     }
 
     .footer-btn {
-        
-    }
-
-
-    .footer-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        row-gap: 72px;
         
     }
 
@@ -1397,10 +1388,6 @@ input {
         width: calc((100% - 312px)/3);
     }
 
-    .footer-container {
-        display: flex;
-        flex-direction: row ;
-    }
 
     .footer-first-section {
         
@@ -1432,11 +1419,9 @@ input {
 
 
     .footer-container {
-        display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
         row-gap: 72px;
-        width: 584px;
+    
     }
 
     .footer-logo{
