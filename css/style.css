@@ -102,7 +102,8 @@ img {
 }
 
 .container {
-    width: 288px;
+    width: 320px;
+    padding: 0 16px;
     margin: 0 auto;
 
 }
@@ -203,6 +204,14 @@ nav {
     display: none;
     align-items: flex-end;
     justify-content: end;
+}
+
+.nav-contacts-link{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455
 }
 
 .address-element {
@@ -356,7 +365,7 @@ nav {
     background-size: cover;
     text-align: center;
     min-width: 320px;
-    padding-bottom: 72px;
+    padding: 112px 0;
     background-repeat: no-repeat;
     background-position: center;
     margin: 0 auto;
@@ -373,11 +382,18 @@ nav {
 }
 
 .main-section-title {
+   
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 72px;
-    padding-top: 72px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11111;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 72px;
+    max-width: 216px;
 }
 
 
@@ -474,7 +490,7 @@ nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 72px;
+    gap: 64px 24px;
 }
 
 .team-row-block { 
@@ -707,17 +723,19 @@ nav {
     justify-content: flex-start;
     flex-direction: column;
     padding: 96px 0; 
-    
 }
 
 .footer-container {
-    padding-top: 96px;
-    padding-bottom: 96px;
+    
 }
 
 .footer-first-section {
-    padding-bottom: 72px;
+    margin-bottom: 72px;
 }
+
+.footer-second-section {
+    margin-bottom: 72px;
+}  
 
 .footer-subtitle {
     font-weight: 500;
@@ -766,10 +784,6 @@ nav {
     color: #f4f4fd;
     min-width: 288px;
     margin-bottom: 16px;
-}
-
-.footer-second-section {
-    padding-bottom: 72px;
 }
 
 .footer-subtitle {
@@ -852,7 +866,6 @@ nav {
     display: flex;
     justify-content: center;
     flex-direction:column;
-    gap: 16px;
 }
 
 .footer-btn {
@@ -1034,14 +1047,19 @@ nav {
 }
 
 .form-input{
-    width: 100%;
-    height: 40px;
-    border: 1px solid rgba(46, 47, 66, 0.4);
-    background-color: transparent;
+    border: 1px solid #ffffff;
     border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    background-color: transparent;
+    width: 288px;
+    height: 40px;
     outline: transparent;
-    padding-left: 38px;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: #ffffff;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    padding-left: 16px;
+    margin-bottom: 24px;
 }
 
 input {
@@ -1176,8 +1194,7 @@ input {
 
 
     .container {
-        width: 768px; 
-        padding: 0 16px;
+        width: 768px 
 
     }
 
@@ -1190,24 +1207,29 @@ input {
         margin-right: 120px;
     }
 
-    .nav-contacts-link {
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 1.16667;
-        letter-spacing: 0.04em;
-        color: #434455;
-    }
-
     .contacts {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
     }
 
+    .nav-contacts-link {
+        font-size: 12px;
+        line-height: 1.16667;
+        letter-spacing: 0.04em;
+    }
+
     .menu-btn {
         display:none;
     }
     
+    .main-section-title{
+        max-width: 320px;
+        max-height: 120px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
     .option {
         flex-direction: row;
         flex-wrap: wrap;
@@ -1228,8 +1250,9 @@ input {
 
     .footer-container{
         display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
-        margin-left: 108px;
+        width: 584px;
     }
 
     .footer-first-section {
@@ -1241,10 +1264,9 @@ input {
     }
 
     .footer-subscribe {
-        display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 16px;
+
     }
 
     .footer-subscribe-text {
@@ -1255,7 +1277,6 @@ input {
     .footer-form {
         display: flex;
         flex-direction: row;
-        gap: 24px;
     }
 
     .footer-btn {
@@ -1280,7 +1301,7 @@ input {
     }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1158px) {
     h1 {
         min-width: 496px;
     }
@@ -1313,14 +1334,15 @@ input {
 
     .nav-contacts-link {
         font-weight: 400;
-        font-size: 12px;
-        line-height: 1.16667;
-        letter-spacing: 0.04em;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
         color: #434455;
+        font-weight: 400;
     }
 
     .container {
-        width: 1440px;
+        width: 1158px;
         
     }
 
@@ -1446,8 +1468,7 @@ input {
     }
 
     .main-section-title {
-        padding-top:96px;
-        padding-bottom: 48px;
+        margin-bottom: 48px;
     }
 
     .main-button {
@@ -1461,7 +1482,6 @@ input {
     }
 
     .option-block {
-        margin-right: 24px;
         width: calc((100% - 72px) / 4);
     }
 }
