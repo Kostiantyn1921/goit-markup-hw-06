@@ -48,8 +48,8 @@ h1, h2, h3, h4, h5, h6, p, div {
 
 h1 {
     font-weight: 700;
-    font-size: 56px;
-    line-height: 1.07;
+    font-size: 36px;
+    line-height: 1.11111;
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
@@ -726,15 +726,20 @@ nav {
 }
 
 .footer-container {
-    
+    margin-top: 72px;
+    margin-bottom: 72px;
 }
 
 .footer-first-section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
     margin-bottom: 72px;
 }
 
 .footer-second-section {
-    margin-bottom: 72px;
+    
 }  
 
 .footer-subtitle {
@@ -866,11 +871,12 @@ nav {
     display: flex;
     justify-content: center;
     flex-direction:column;
+    gap: 16px;
 }
 
 .footer-btn {
     max-width: 165px;
-    margin-left: 61px;
+    
 }
 
 .modal-icon-check { 
@@ -1194,7 +1200,7 @@ input {
 
 
     .container {
-        width: 768px 
+        width: 768px;
 
     }
 
@@ -1224,6 +1230,12 @@ input {
     }
     
     .main-section-title{
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 1.07143;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: #fff;
         max-width: 320px;
         max-height: 120px;
         margin-right: auto;
@@ -1260,12 +1272,13 @@ input {
     }
 
     .footer-second-section {
-        
+        display: inline-block;
     }
 
     .footer-subscribe {
+        display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: start
 
     }
 
@@ -1303,7 +1316,12 @@ input {
 
 @media screen and (min-width: 1158px) {
     h1 {
-        min-width: 496px;
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 1.07143;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: #fff;
     }
 
     .header {
@@ -1343,7 +1361,6 @@ input {
 
     .container {
         width: 1158px;
-        
     }
 
     .contacts {
@@ -1384,6 +1401,15 @@ input {
         
     }
 
+    .main-section-title{
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 1.07143;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: #fff;
+    }
+
     .option-title {
         text-align: left;
     }
@@ -1410,19 +1436,35 @@ input {
         width: calc((100% - 312px)/3);
     }
 
+    .footer {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        gap: 72px;
+    }
+
+    .footer-container {
+        display: flex;
+        align-items: baseline;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 0;
+        width: auto;
+    }
 
     .footer-first-section {
-        
+        margin-right: 120px;
         
     }
 
     .footer-second-section {
-        
+        margin-right: 80px;
     }
 
     .footer-subscribe {
         align-items: baseline;
-        flex-direction: row;
+        
         flex-wrap: wrap;
         justify-content: start;
     }
